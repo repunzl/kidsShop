@@ -1,0 +1,24 @@
+.shoes-footer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .shoes-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  

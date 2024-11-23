@@ -1,0 +1,331 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    width: 60px; 
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; 
+  }
+  
+  .navbar-links li {
+    position: relative; 
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    top: 25px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #007bff;
+  }
+
+  .navbar-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .navbar-search input {
+    padding: 8px 35px 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .navbar-search input:focus {
+    border-color: #007bff;
+  }
+  
+  .navbar-search .icon {
+    position: absolute;
+    right: 10px;
+    color: #ccc;
+    font-size: 16px;
+    pointer-events: none;
+  }
+  .categories-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    padding: 10px 0;
+    display: none;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar-categories:hover .categories-dropdown {
+    display: block;
+    opacity: 1;
+  }
+  .navbar-categories {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .navbar-categories span {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .navbar-categories span svg {
+    margin-right: 8px; 
+  }
+  
+  .categories-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    padding: 10px 0;
+    display: none;
+    width: 200px; 
+  }
+  
+  .navbar-categories:hover .categories-dropdown {
+    display: block;
+  }
+  
+  .categories-dropdown li {
+    padding: 8px 20px;
+  }
+  
+  .categories-dropdown li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .categories-dropdown li a:hover {
+    color: #ddd;
+  }
+
+.top-banner {
+  background-color: #6a0dad; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.banner-right a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.banner-right a:hover {
+  text-decoration: underline;
+  color: #ffccff;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #6a0dad;
+}
+
+.navbar-search input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar-signin, .navbar-login-professional {
+  background-color: #007bff; 
+  color: white; 
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 20px; 
+}
+
+.navbar-signin:hover, .navbar-login-professional:hover {
+  background-color: #0056b3; 
+  color: #fff; 
+}
+
+.navbar-signin:focus, .navbar-login-professional:focus {
+  outline: none;
+  border: 2px solid #0056b3; 
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-actions a {
+  margin-left: 15px;
+}
+
+.navbar-signin, .navbar-login-professional {
+  background-color: #6a0dad;
+  color: white; 
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 20px; 
+  display: inline-block; 
+}
+
+.navbar-signin:hover, .navbar-login-professional:hover {
+  background-color: #5a0a9d; 
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar-signin:focus, .navbar-login-professional:focus {
+  outline: none;
+  border: 2px solid #ffccff; 
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.navbar-actions a {
+  margin-left: 15px;
+}
+
+.navbar-signin, .navbar-login-professional {
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 30px; 
+  font-size: 16px;
+  font-weight: 600; 
+  text-decoration: none;
+  transition: all 0.3s ease; 
+  margin-left: 20px; 
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
+}
+
+.navbar-signin:hover, .navbar-login-professional:hover {
+  background-color: #0056b3; 
+  color: #fff; 
+  transform: translateY(-2px); 
+  text-decoration: none; 
+}
+
+.navbar-signin:focus, .navbar-login-professional:focus {
+  outline: none;
+  border: 2px solid #0056b3; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.6); 
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.navbar-actions a {
+  margin-left: 15px;
+}
+
+
